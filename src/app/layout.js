@@ -1,11 +1,8 @@
 import { ThemeProvider } from '@/components/theme-provider'
 import Footer from '@/layout/Footer/Footer'
 import Header from '@/layout/Header/Header'
+import { inter } from '@/lib/fonts'
 import '@/styles/globals.css'
-
-import localFont from 'next/font/local'
-
-const nasafont = localFont({ src: '../../public/fonts/Nasa.ttf' })
 
 export const metadata = {
   title: 'Nasavigation',
@@ -14,7 +11,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning className={nasafont.className}>
+    <html lang="en" suppressHydrationWarning className={inter.className}>
       <body>
         <ThemeProvider
           attribute="class"
