@@ -19,11 +19,11 @@ This is an open-source project! Contributions are welcome from developers of all
 1. **Fork** the repository.
 2. **Clone** your forked repo:
    ```sh
-   git clone https://github.com/YOUR-USERNAME/Nasavigation-OS.git
+   git clone https://github.com/YOUR-USERNAME/nasavigation-os.git
    ```
 3. **Navigate** to the project folder:
    ```sh
-   cd Nasavigation-OS
+   cd nasavigation-os
    ```
 4. **Install dependencies** (if required):
    ```sh
