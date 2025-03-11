@@ -1,5 +1,11 @@
 import { ThemeProvider } from '@/components/theme-provider'
+import Footer from '@/layout/Footer/Footer'
+import Header from '@/layout/Header/Header'
 import '@/styles/globals.css'
+
+import localFont from 'next/font/local'
+
+const nasafont = localFont({ src: '../../public/fonts/Nasa.ttf' })
 
 export const metadata = {
   title: 'Nasavigation',
@@ -8,7 +14,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className={nasafont.className}>
       <body>
         <ThemeProvider
           attribute="class"
@@ -16,7 +22,9 @@ export default function RootLayout({ children }) {
           enableSystem
           disableTransitionOnChange
         >
+          <Header />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
